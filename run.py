@@ -22,6 +22,6 @@ def careers():
     return render_template("careers.html")
 
 if __name__ == '__main__':
-    app.run(host=os.environ.get('IP'),
-            port=int(os.environ.get('PORT')),
+    app.run(host='0.0.0.0',
+            port=8000,
             debug=True)
